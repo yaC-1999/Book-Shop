@@ -1,0 +1,31 @@
+.slider{
+    display: flex;
+    justify-content: center;
+text-align: center;
+}
+.full-body img{
+    width: 800px;
+    height: 400px;
+}
+.full-body button{
+    background: none;
+    /* border-bottom: none; */
+    border: none;
+    /* color: rgb(116, 0, 0); */
+ 
+
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  .dot.active {
+    background: rgb(196, 0, 0);
+  }
