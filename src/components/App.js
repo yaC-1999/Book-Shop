@@ -1,8 +1,8 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import Header from '../layout/Header';
-import ImageSlider from './home/ImageSlider.js'
-import ProductSlider from './home/ProductSlider';
 import Footer from '../layout/Footer';
+import Routes from './Routes';
+import { Router } from 'workbox-routing';
 
 class App extends React.Component {
     render() {
@@ -10,11 +10,7 @@ class App extends React.Component {
             <div>
                 <Header />
 
-                <ImageSlider />
-
-                <StrictMode>
-                    <ProductSlider />
-                </StrictMode>
+               <Routes/>
 
                 <Footer />
             </div>

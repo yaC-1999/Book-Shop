@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import AddIcon from '@material-ui/icons/Add';
 import ProductData from '../../asset/api/productData.json';
 import '../../asset/css/home/ProductSlider.css';
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 // import Card from 'src/pages/Card.js';
 
 // Import Swiper styles
@@ -68,9 +68,14 @@ export default function ProductSlider() {
             }} navigation={true} className="mySwiper">
                 {slider}
                 <SwiperSlide>
-                    <button className="add-icon">
+                    <Router>
+                        <Link to={`/productList`}>
+                        <button className="add-icon">
                         <AddIcon style={{ fontSize: 100 }} />
                     </button>
+                        </Link>
+                    </Router>
+                    
                 </SwiperSlide>
 
             </Swiper>
