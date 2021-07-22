@@ -1,8 +1,7 @@
 import React from 'react';
-import './header.css'
+import '../asset/css/header/header.css'
 import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import Menu from './Menu.js'
 
 const Header = () => {
     return (
@@ -25,7 +24,7 @@ const Header = () => {
 
                 </div>
             </div>
-            <Menu />
+         
         </div>
     )
 }

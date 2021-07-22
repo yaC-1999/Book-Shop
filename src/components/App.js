@@ -1,8 +1,8 @@
 import React, { StrictMode } from 'react';
-import Header from './header/Header';
-import ImageSlider from './body/ImageSlider';
-import ProductSlider from './body/ProductSlider';
-import Footer from './footer/Footer';
+import Header from '../layout/Header';
+import ImageSlider from './home/ImageSlider.js'
+import ProductSlider from './home/ProductSlider';
+import Footer from '../layout/Footer';
 
 class App extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class App extends React.Component {
                     <ProductSlider />
                 </StrictMode>
 
-                <Footer/>
+                <Footer />
             </div>
 
         )

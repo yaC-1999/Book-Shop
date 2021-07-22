@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import './ImageSlider.css';
+import '../../asset/css/home/ImageSlider.css';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import ImageDate from './imageData.json';
+import ImageDate from '../../asset/api/imageData.json';
 
 const ImageSlider = () => {
   const [sliderIndex, setSliderIndex] = useState(2);

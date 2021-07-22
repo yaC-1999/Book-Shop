@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../asset/css/footer/footer.css'
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
