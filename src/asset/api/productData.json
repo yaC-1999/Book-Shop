@@ -1,72 +1,102 @@
 [
     {
-        "id": "1",
-        "imageURL": "https://www.30book.com/Media/Book/109971.jpg",
+        "id": 1,
         "name": "برادر کشی",
-        "price": "125000",
-        "currency": "تومان"
+        "price": 125000,
+        "discount": 112000,
+        "grouping": "ادبیات",
+        "description": "آیا باید به کوهستان بروم و آبادی را با مسالمت به یاغی‌ها تسلیم کنم تا از ویران شدن نجات پیدا کند؟ یا اینکه فقط کنار گود بنشینیم و منتظر لطف و مرحمت تو بمانم؟ افسوس که ما فقط انسانیم خدای من. ما دیگر بیشتر از این نمی‌توانیم صبر کنیم. رحمت تو خیلی طولش می‌دهد و زیاد در راه می‌ماند و اکثر اوقات بعد از مرگ و در حیات دیگر به ما می‌رسد. اما من آن را همین الان می‌خواهم، در همین حیات!",
+        "specification": {
+            "writer": "نیکوس کازانتزاکیس",
+            "translator": "محمد ابراهیم محبوب",
+            "publishers": "امین الضرب",
+            "yearOfPublication": 1399,
+            "numberOfPages": 384
+        },
+        "gallery": [
+            "https://www.30book.com/Media/Book/109971.jpg",
+            "https://www.iranketab.ir/Files/AttachFiles/dc2799395ddf45b3b390a2bb4a8f7eeb.jpg"
+        ],
+        "inventory": 5
     },
     {
-        "id": "2",
-        "imageURL": "https://www.30book.com/Media/Book/115579.jpg",
+        "id": 2,
         "name": "زندگی خصوصی یک سرآشپز",
-        "price": "79000",
-        "currency": "تومان"
+        "price": 79000,
+        "discount": 70000,
+        "grouping": "ادبیات",
+        "description": "شما یک رمان خوشمزه دست گرفته اید. رمانی به قدر پوره ی سیب زمینی روح نواز و لطیف و به قدر پیتزای سیر و استیک راضی کننده و دلچسب. مگر می شود داستان طلاق این قدر سرگرم کننده و خنده دار باشد و در آن از خیانت و انتقام گرفته تا گروه درمانی و آشپزی هم حرف زده شود؟ این کتاب پر است از اتفاقات غیرمنتظره و اجتناب ناپذیر که منجر به تلخ ترین اتفاق زندگی نویسنده شده است. راشل سامستات نویسنده و مجری کتاب ها و برنامه های تلویزیونی آشپزی، هفت ماهه باردار است که می فهمد همسرش عاشق شده، آن هم عاشق زنی گردن دراز با دماغ عقابی و به لاغری نی قلیان. خبر خوب اینکه در این کتاب از غذاهای متنوعی نام برده شده که همگی به صورت پانویس ذکر و شیوه ی پخت آنها توضیح داده شده تا بتوانید در مواقع لزوم از آنها کمک بگیرید!",
+        "specification": {
+            "writer": "نورا افرون",
+            "translator": "مهسا ملک مرزبان",
+            "publishers": "کراسه",
+            "yearOfPublication": 1400,
+            "numberOfPages": 162
+        },
+        "gallery": [
+            "https://www.30book.com/Media/Book/115579.jpg",
+            "https://didavarbook.com/media/image/505037/0505037.jpg"
+        ],
+        "inventory": 2
     },
     {
-        "id": "3",
-        "imageURL": "https://www.30book.com/Media/Book/114433.jpg",
+        "id": 3,
         "name": "کتابخانه نیمه شب",
-        "price": "70000",
-        "currency": "تومان"
+        "price": 70000,
+        "discount": 65000,
+        "grouping": "ادبیات",
+        "description": "بین مرگ و زندگی یه کتابخونه‌ست، و توی اون کتابخونه، قفسه‌های کتاب تا ابد ادامه دارن. هر کتاب شانس امتحان کردن یکی از زندگی‌هایی رو بهت می‌ده که می‌تونستی تجربه‌شون کنی. تا ببینی اگه انتخاب دیگه‌ای کرده بودی، چی می‌شد... اگه شانس این رو داشتی که حسرت‌هات رو از بین ببری، کار متفاوتی انجام بدی، چه اتفاقی میفتاد.»",
+        "specification": {
+            "writer": "مت هیگ",
+            "translator": "محمد صالح نورانی زاده",
+            "publishers": "کوله پشتی",
+            "yearOfPublication": 1400,
+            "numberOfPages": 352
+        },
+        "gallery": [
+            "https://www.30book.com/Media/Book/114433.jpg",
+            "https://www.iranketab.ir/Files/AttachFiles/6622b8e9ea6f408ab94da25189ef31b0.jpg"
+        ],
+        "inventory": 2
     },
     {
-        "id": "4",
-        "imageURL": "https://www.30book.com/Media/Book/114328.jpg",
+        "id": 4,
         "name": "دوباره فکر کن",
-        "price": "65000",
-        "currency": "تومان"
+        "price": 65000,
+        "discount": 60000,
+        "grouping": "روانشناسی",
+        "description": "اکثر ما به دانش و تخصصمان افتخار می‌کنیم و خیلی دوست داریم پای باورها و عقایدمان بمانیم. در یک دنیای باثبات، چنین طرز فکری منطقی خواهد بود و ثبات عقیده‌ی ما، عواید قابل توجهی را به همراه خواهد داشت. اما مشکل اینجاست که دنیای ما به‌سرعت تغییر می‌کند و باید معادل زمانی که صرف تفکر می‌کنیم، برای بازنگری و اصلاح تفکرات‌مان هم وقت بگذاریم.",
+        "specification": {
+            "writer": "آدام گرانت",
+            "translator": "جمعی از مترجمان",
+            "publishers": "نوین",
+            "yearOfPublication": 1400,
+            "numberOfPages": 288
+        },
+        "gallery": [
+            "https://www.30book.com/Media/Book/114328.jpg",
+            "https://www.iranketab.ir/Files/AttachFiles/a0e7f1142f3b4eb98fd0a081af29f4c8.jpg"
+        ],
+        "inventory": 4
     },
     {
-        "id": "5",
-        "imageURL": "https://www.30book.com/Media/Book/74755.jpg",
-        "name": "مغازه خودکشی فروشی",
-        "price": "38000",
-        "currency": "تومان"
-    },
-    {
-        "id": "6",
-        "imageURL": "https://www.30book.com/Media/Book/116610.jpg",
-        "name": "اول شخص مفرد",
-        "price": "31000",
-        "currency": "تومان"
-    },
-    {
-        "id": "7",
-        "imageURL": "https://www.30book.com/Media/Book/117386.jpg",
-        "name": "آسوده گرایی",
-        "price": "59000",
-        "currency": "تومان"
-    },
-    {
-        "id": "8",
-        "imageURL": "https://www.30book.com/Media/Book/75273.jpg",
-        "name": "تولستوی و مبل بنفش",
-        "price": "55000",
-        "currency": "تومان"
-    },
-    {
-        "id": "9",
-        "imageURL": "https://www.30book.com/Media/Book/69474.jpg",
-        "name": "فرمن موش کتاب خوان",
-        "price": "32500",
-        "currency": "تومان"
-    },
-    {
-        "id": "10",
-        "imageURL": "https://www.30book.com/Media/Book/90615.jpg",
-        "name": "باشگاه پنج صبحی ها",
-        "price": "75000",
-        "currency": "تومان"
+        "id": 5,
+        "name": "مغازه خودکشی",
+        "price": 38000,
+        "discount": 35000,
+        "grouping": "ادبیات",
+        "description": "اگر زندگی شما با شکست مواجه شده، بگذارید مرگتان موفقیت آمیز باشد؟ آدم های زیادی کارهای آماتور انجام میدن. میدونین از هر صد و پنجاه هزار اقدام به خودکشی، صد و سی و هشت هزارتاش با شکست مواجه میشه. این آدم ها یا اغلب خودشون رو علیل می کنن و ویلچرنشین میشن یا تا آخر عمر از ریخت می افتن، ولی با کمک ما خودکشی تضمین شده است. یا می میرین یا پولتون رو برمی گردونیم. فقط نفس عمیق بکشین و انجامش بدین! و، همونطور که همیشه می گم، آدم فقط یه بار می میره، پس باید لحظه ای فراموش نشدنی باشه...",
+        "specification": {
+            "writer": "ژان تولی",
+            "translator": "سودا وهاب زاده",
+            "publishers": "عطر کاج",
+            "yearOfPublication": 1399,
+            "numberOfPages": 160
+        },
+        "gallery": [
+            "https://www.iranketab.ir/Images/ProductImages/78b095b4bc3b47568b1f1b078864dfe4.jpg",
+            "https://www.iranketab.ir/Files/AttachFiles/07c268a75cd041d2be7f9ee734644191.jpg"
+        ],
+        "inventory": 2
     }
 ]

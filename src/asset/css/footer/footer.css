@@ -1,7 +1,5 @@
-
 .social-icon a{
-    margin: 10px;
-    
+    margin: 10px; 
 }
 .social-icon{
     background-color: rgb(196, 0, 0);
@@ -9,4 +7,7 @@
 .red-div{
     border-start-start-radius: 50px;
     border-start-end-radius: 50px;
+}
+.text-uppercase{
+    font-family: 'Samim';
 }

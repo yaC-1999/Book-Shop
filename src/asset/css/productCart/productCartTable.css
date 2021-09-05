@@ -1,0 +1,17 @@
+.title h5{
+    font-family: 'Samim';
+    margin-right: -100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    height: 130px;
+  position: relative;
+}
+.form-control{
+  /* background-color: blueviolet; */
+  border:none;
+  
+}

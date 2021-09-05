@@ -48,15 +48,15 @@ const Footer = () => {
                         <ul className='list-unstyled p-0'>
                             <li>
                                 <MDBIcon fas icon="map-marker-alt" />
-                                <span className= "p-1">همین دور و برا</span>
+                                <span className="p-1">همین دور و برا</span>
                             </li>
                             <li>
                                 <MDBIcon fas icon="phone" />
-                                <span className= "p-1">021-12345678</span>
+                                <span className="p-1">021-12345678</span>
                             </li>
                             <li>
                                 <MDBIcon fas icon="envelope" />
-                                <span className= "p-1">info@booka.com</span>
+                                <span className="p-1">info@booka.com</span>
                             </li>
                         </ul>
                     </MDBCol>
@@ -75,10 +75,10 @@ const Footer = () => {
                 <a href="https://www.twitter.com" target="_blank">
                     <MDBIcon icon="twitter fa-2x " color="white" />
                 </a>
-                <a href="https://www.whatsapp.com"target="_blank">
+                <a href="https://www.whatsapp.com" target="_blank">
                     <MDBIcon icon="whatsapp fa-2x " color="white" />
                 </a>
-                <a href="https://www.youtube.com"target="_blank">
+                <a href="https://www.youtube.com" target="_blank">
                     <MDBIcon icon="youtube fa-2x " color="white" />
                 </a>
             </div>

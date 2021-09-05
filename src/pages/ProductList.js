@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import GridList from '../components/productList/GridList'
 
 const ProductList = () => {
     return (
         <div>
-            <GridList/>
+            <GridList />
         </div>
     )
 }
 
-export default ProductList
+export default ProductList;

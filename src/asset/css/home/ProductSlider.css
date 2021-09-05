@@ -1,31 +1,33 @@
 #root { height: 100% }
 html,
-body {
+.product body {
   position: relative;
   height: 100%;
+  
 }
 
-body {
+.product body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Samim';
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
   height: 50px;
+  
 }
 
-.swiper-container {
-  width: 70%;
-  height: 390px;
+.product .swiper-container {
+  width: 70% !important;
+  height: 390px !important;
   margin: 20px auto;
 }
 
-.swiper-slide {
+.product .swiper-slide {
   text-align: center;
   font-size: 15px;
   background: #fff;
-  height: 300px;
+  height: 470px;
 
 
   /* Center slide text vertically */
@@ -43,7 +45,7 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
+.product .swiper-slide img {
   display: block;
   width: 161.500px;
   height: 250px;
@@ -51,18 +53,19 @@ body {
 }
 
 /* --------------------------------------------------------- */
-.swiper-button-next, .swiper-button-prev{
+.product .swiper-button-next, .product .swiper-button-prev{
     color: rgb(196, 0, 0) !important;
     
 }
-.titel{
+ .titel{
     margin-top: 70px;
     margin-bottom: 20px;
 }
-.titel h2{
+ .titel h2{
+
+  font-family: 'Samim';
     text-align: center;
     padding: 5px;
-
     background-color: rgb(196, 0, 0);
     width: 190px;
     height: 50px;
@@ -71,16 +74,17 @@ body {
     
 }
 .product-card h3 , span{
-  
     padding-top: 10px;
     width: 160px;
 color: black;
+font-family: 'Samim';
 
 }
-.product-card span{
+ .product-card span{
+  font-family: 'Samim';
     color: rgb(196, 0, 0);
 }
-.add-icon {
+ .add-icon {
  width: 160px;
  height: 230px; 
  background-color: white;
@@ -89,11 +93,13 @@ color: black;
  margin-bottom: 50px;
 }
 
-.swiper-pagination-bullet{
+.product .swiper-pagination-bullet{
   background-color: rgb(110, 110, 110);
 }
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.product .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background-color: rgb(196, 0, 0);
 }
+
+
 
 
