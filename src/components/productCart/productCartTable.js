@@ -47,114 +47,133 @@ function ProductCartTable() {
   const totalDiscount = [];
   const TOTAL = [];
 
+  if (products) {
 
 
-  return (
+    return (
 
-    <div >
-      <div className="titel">
-        <h2>سبد خرید شما</h2>
+      <div >
+        <div className="titel">
+          <h2>سبد خرید شما</h2>
+        </div>
+        <TableContainer className={classes.root} component={Paper}>
+          <Table className={classes.table} aria-label="simple table" >
+            <TableHead>
+              <TableRow >
+                <TableCell align="center"></TableCell>
+                <TableCell className={classes.font} align="center">محصول</TableCell>
+                <TableCell className={classes.font} align="center">تعداد</TableCell>
+                <TableCell className={classes.font} align="center">قیمت</TableCell>
+                <TableCell className={classes.font} align="center">تخفیف</TableCell>
+                <TableCell className={classes.font} align="center">قیمت کل</TableCell>
+              </TableRow>
+            </TableHead>
+
+            <TableBody>
+
+
+              {products.map((product) => {
+                { totalPrice.push(product.price * product.qty) }
+                { totalDiscount.push((product.price - product.discount) * product.qty) }
+                { TOTAL.push((product.price * product.qty) - ((product.price - product.discount) * product.qty)) }
+
+
+                return (
+                  <TableRow key={product.gallery}>
+                    <TableCell align="center" component="th" scope="row">
+                      <CardMedia
+                        className={classes.cover}
+                        image={product.gallery}
+                      />
+                    </TableCell>
+
+                    <TableCell className={classes.font} align="center">
+                      {product.name}
+                    </TableCell>
+                    <TableCell align="center">
+                      {product.qty}
+                    </TableCell>
+                    <TableCell align="center">
+                      {product.price}
+
+                    </TableCell>
+                    <TableCell align="center">
+                      {product.price - product.discount}
+                    </TableCell>
+                    <TableCell align="center">
+                      {product.discount * product.qty}
+                    </TableCell>
+
+                  </TableRow>
+
+                )
+              })}
+
+              <TableRow>
+                <TableCell colSpan={3}></TableCell>
+                <TableCell align="left">{totalPrice.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
+                <TableCell className={classes.font} align="right">مبلغ کل بدون تخفیف</TableCell>
+
+              </TableRow>
+
+
+              <TableRow>
+                <TableCell colSpan={3}></TableCell>
+                <TableCell align="left">{totalDiscount.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
+                <TableCell className={classes.font} align="right">مبلغ کل تخفیف</TableCell>
+
+              </TableRow>
+              <TableRow>
+                <TableCell colSpan={3}></TableCell>
+                <TableCell align="left">{TOTAL.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
+                <TableCell className={classes.font} align="right">مبلغ کل با تخفیف</TableCell>
+
+              </TableRow>
+              <TableRow>
+                <TableCell colSpan={6}>
+
+                  <Button className={classes.Button} align="center" variant="contained" color="secondary" >
+                    نهایی کردن خرید
+                  </Button >
+                  <Link to={'/'}>
+                    <Button variant="contained" color="primary" style={{ width: '30%' }}>
+                      بازگشت به صفحه محصولات
+                    </Button>
+                  </Link>
+
+                </TableCell>
+              </TableRow>
+
+              <div>
+
+              </div>
+            </TableBody>
+
+          </Table>
+        </TableContainer >
+
+
+
+
+      </div >
+    )
+  } else {
+    return (
+      <div style={{ height: '300px', textAlign: 'center', paddingTop: '100px' }}>
+
+        <h1 className={classes.font}>
+          سبد خرید شما خالی است
+        </h1>
+        <Link to={'/'}>
+          <Button variant="contained" color="secondary" >
+            بازگشت به صفحه محصولات
+          </Button>
+        </Link>
+
       </div>
-      <TableContainer className={classes.root} component={Paper}>
-        <Table className={classes.table} aria-label="simple table" >
-          <TableHead>
-            <TableRow >
-              <TableCell align="center"></TableCell>
-              <TableCell className={classes.font} align="center">محصول</TableCell>
-              <TableCell className={classes.font} align="center">تعداد</TableCell>
-              <TableCell className={classes.font} align="center">قیمت</TableCell>
-              <TableCell className={classes.font} align="center">تخفیف</TableCell>
-              <TableCell className={classes.font} align="center">قیمت کل</TableCell>
-            </TableRow>
-          </TableHead>
+    )
 
-          <TableBody>
-
-            {products.map((product) => {
-              { totalPrice.push(product.price * product.qty) }
-              { totalDiscount.push((product.price - product.discount) * product.qty) }
-              { TOTAL.push((product.price * product.qty) - ((product.price - product.discount) * product.qty)) }
-
-
-              return (
-                <TableRow key={product.gallery}>
-                  <TableCell align="center" component="th" scope="row">
-                    <CardMedia
-                      className={classes.cover}
-                      image={product.gallery}
-                    />
-                  </TableCell>
-
-                  <TableCell className={classes.font} align="center">
-                    {product.name}
-                  </TableCell>
-                  <TableCell align="center">
-                    {product.qty}
-                  </TableCell>
-                  <TableCell align="center">
-                    {product.price}
-
-                  </TableCell>
-                  <TableCell align="center">
-                    {product.price - product.discount}
-                  </TableCell>
-                  <TableCell align="center">
-                    {product.discount * product.qty}
-                  </TableCell>
-
-                </TableRow>
-
-              )
-            })}
-
-            <TableRow>
-              <TableCell colSpan={3}></TableCell>
-              <TableCell align="left">{totalPrice.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
-              <TableCell className={classes.font} align="right">مبلغ کل بدون تخفیف</TableCell>
-
-            </TableRow>
-
-
-            <TableRow>
-              <TableCell colSpan={3}></TableCell>
-              <TableCell align="left">{totalDiscount.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
-              <TableCell className={classes.font} align="right">مبلغ کل تخفیف</TableCell>
-
-            </TableRow>
-            <TableRow>
-              <TableCell colSpan={3}></TableCell>
-              <TableCell align="left">{TOTAL.reduce((previousScore, currentScore) => previousScore + currentScore, 0)}</TableCell>
-              <TableCell className={classes.font} align="right">مبلغ کل با تخفیف</TableCell>
-
-            </TableRow>
-            <TableRow>
-              <TableCell colSpan={6}>
-
-                <Button className={classes.Button} align="center" variant="contained" color="secondary" >
-                  نهایی کردن خرید
-                </Button >
-                <Link to={'/'}>
-                  <Button variant="contained" color="primary" style={{ width: '30%' }}>
-                    بازگشت به صفحه محصولات
-                  </Button>
-                </Link>
-
-              </TableCell>
-            </TableRow>
-
-            <div>
-
-            </div>
-          </TableBody>
-
-        </Table>
-      </TableContainer >
-
-
-
-
-    </div >
-  )
+  }
 }
 
 export default ProductCartTable;
